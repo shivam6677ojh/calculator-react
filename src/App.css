@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@keyframes rainbowGlow {
+    0% {
+        box-shadow: 0 0 10px 4px red;
+        filter: hue-rotate(0deg);
+    }
+
+    25% {
+        box-shadow: 0 0 10px 4px orange;
+        filter: hue-rotate(90deg);
+    }
+
+    50% {
+        box-shadow: 0 0 10px 4px yellow;
+        filter: hue-rotate(180deg);
+    }
+
+    75% {
+        box-shadow: 0 0 10px 4px green;
+        filter: hue-rotate(270deg);
+    }
+
+    100% {
+        box-shadow: 0 0 10px 4px red;
+        filter: hue-rotate(360deg);
+    }
+}
+
+.glow-button {
+    background-color: black;
+    color: white;
+    border-radius: 9999px;
+    /* fully round */
+    font-weight: bold;
+    width: 56px;
+    height: 56px;
+    margin: 0.5rem;
+    animation: rainbowGlow 2s linear infinite;
+    transition: transform 0.1s ease;
+}
+
+.glow-button:active {
+    transform: scale(0.95);
+}
