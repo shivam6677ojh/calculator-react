@@ -11,8 +11,7 @@ const ButtonContainer = ({ onButtonClick }) => {
                     <button
                         key={buttoname}
                         onClick={() => onButtonClick(buttoname)}
-                       className="glow-button"
-
+                        className="glow-button"
                     >
                         {buttoname}
                     </button>
