@@ -20,7 +20,6 @@ function App() {
     else {
       const currentvalue = calVal + buttonText;
       setcalVal(currentvalue);
-
     }
   }
 
